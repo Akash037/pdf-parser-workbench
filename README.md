@@ -31,6 +31,15 @@ This project provides a Streamlit-based web application designed to evaluate, co
     *   `.json` (Tables, Metadata)
     *   `.docx` (Basic conversion of primary text/markdown output)
 
+## Technology Stack
+
+This application is built primarily using the following frameworks and libraries:
+
+*   **Streamlit:** The core framework used to create the interactive web application interface. It allows for rapid development of data-centric apps purely in Python, handling the UI components, state management, and overall application flow.
+*   **LangChain:** Utilized specifically for the "Chunking Preview" feature. The `RecursiveCharacterTextSplitter` from LangChain demonstrates how extracted text can be prepared for downstream tasks like Retrieval-Augmented Generation (RAG).
+*   **Parsing Libraries:** The various PDF parsing tools themselves (PyMuPDF, pdfplumber, pytesseract, Nougat CLI, GROBID API via `requests`) are the subjects of evaluation within the workbench, rather than framework components of the application itself.
+*   **Other Libraries:** Standard Python libraries (`os`, `subprocess`, `json`, `difflib`, etc.) and `python-docx` (for DOCX export) are also used.
+
 ## Setup & Installation
 
 1.  **Prerequisites:**
