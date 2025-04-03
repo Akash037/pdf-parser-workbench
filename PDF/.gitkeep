@@ -1,0 +1,2 @@
+# This file ensures the PDF directory is tracked by Git.
+# Place your PDF files here; they will be ignored by Git (see .gitignore).

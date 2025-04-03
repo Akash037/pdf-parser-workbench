@@ -13,6 +13,10 @@ __pycache__/
 # Temporary Nougat output
 temp_nougat_output*/
 
+# Ignore PDF files in the PDF directory, but keep the directory itself
+PDF/*
+!PDF/.gitkeep
+
 # IDE / Editor specific files
 .vscode/
 .idea/
